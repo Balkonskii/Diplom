@@ -52,6 +52,7 @@ public class BabyProgressDataBaseHelper extends SQLiteOpenHelper {
 	public static final String NOTE_CHILDREN_ID = "childrenId";
 	public static final String NOTE_PHOTO = "notePhoto";
 	public static final String NOTE_DURATION = "noteDuration";
+	public static final String NOTE_TITLE = "noteTitle";
 
 	public static final String NOTICE_TABLE_NAME = "notice";
 	public static final String NOTICE_ID = "noticeId";
@@ -90,7 +91,7 @@ public class BabyProgressDataBaseHelper extends SQLiteOpenHelper {
 	public static final String CREATE_TABLE_NOTE = "create table "
 			+ NOTE_TABLE_NAME + "(" + NOTE_ID
 			+ " integer primary key autoincrement," + NOTE_DESCRIPTION
-			+ " text," + NOTE_POSTDATE + " text," + NOTE_PHOTO + " blob,"
+			+ " text,"+ NOTE_TITLE + " ,text" + NOTE_POSTDATE + " text," + NOTE_PHOTO + " blob,"
 			+ NOTE_DURATION + " real," + NOTE_CHILDREN_ID + " integer,"
 			+ "foreign key(" + NOTE_CHILDREN_ID + ") references "
 			+ CHILDREN_TABLE_NAME + "(" + CHILDREN_ID + "));";

@@ -71,7 +71,7 @@ public class ChildrenProfileActivity extends Activity {
 		edit_growth = (EditText) findViewById(R.id.edit_growth);
 
 		datepicker_birthdate = (DatePicker) findViewById(R.id.datePicker_birthdate);
-
+		
 		button_ok = (Button) findViewById(R.id.button_ok);
 
 		adapter = new DataAdapter(this);

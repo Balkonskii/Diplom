@@ -10,21 +10,20 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ListViewAdapter extends BaseAdapter {
+public class ListViewChildrenAdapter extends BaseAdapter {
 	private LayoutInflater mInflater = null;
 	private ArrayList<Children> childrens;
 
 	private final class ViewHolder {
 		ImageView imageView_awatar;
-		TextView textView_name;
-		ImageView imageView_choosed;
+		TextView textView_name;		
 	}
 
 	private int selectedChildrenId = 0;
 	private int selectedPosition = 0;
 	private ViewHolder mHolder = null;
 
-	public ListViewAdapter(Context context) {
+	public ListViewChildrenAdapter(Context context) {
 		Context mContext = context;
 		mInflater = (LayoutInflater) mContext
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

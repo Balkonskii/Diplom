@@ -20,6 +20,7 @@ public class Note {
 	private Date _Postdate;
 	private double _Duration;
 	private int _NoteTypeId;
+	private String _Title;
 
 	public void setId(int newId) {
 		_Id = newId;
@@ -77,4 +78,11 @@ public class Note {
 		return _NoteTypeId;
 	}
 
+	public String getTitle() {
+		return _Title;
+	}
+
+	public void setTitle(String newTitle) {
+		_Title = newTitle;
+	}
 }

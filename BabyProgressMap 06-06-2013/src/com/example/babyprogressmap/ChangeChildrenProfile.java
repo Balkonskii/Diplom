@@ -22,7 +22,7 @@ public class ChangeChildrenProfile extends Activity {
 	Button button_edit;
 	Button button_delete;
 	DataAdapter dataAdapter;
-	ListViewAdapter listViewAdapter;
+	ListViewChildrenAdapter listViewAdapter;
 	ListView listView_children;
 	View row;
 	Bundle bundle;
@@ -40,32 +40,32 @@ public class ChangeChildrenProfile extends Activity {
 		dataAdapter = new DataAdapter(this);
 		dataAdapter.open();
 
-		// ArrayList<Children> childrens = dataAdapter.getChildrens();
+		ArrayList<Children> childrens = dataAdapter.getChildrens();
 		// ////////////////////////////////////////// debug
-		Bitmap.Config conf = Bitmap.Config.ARGB_8888;
-		Bitmap bmp = Bitmap.createBitmap(200, 200, conf);
-
-		Bitmap.Config conf1 = Bitmap.Config.ARGB_8888;
-		Bitmap bmp1 = Bitmap.createBitmap(200, 200, conf);
-
-		Children child1 = new Children();
-		child1.setName("Name1");
-		child1.setId(5);
-		child1.setAwatar(DataManager.getImageBytes(bmp));
-		Children child2 = new Children();
-		child2.setName("Name2");
-		child2.setId(10);
-		child2.setAwatar(DataManager.getImageBytes(bmp1));
-
-		Children[] childrens = { child1, child2 };
+//		Bitmap.Config conf = Bitmap.Config.ARGB_8888;
+//		Bitmap bmp = Bitmap.createBitmap(200, 200, conf);
+//
+//		Bitmap.Config conf1 = Bitmap.Config.ARGB_8888;
+//		Bitmap bmp1 = Bitmap.createBitmap(200, 200, conf);
+//
+//		Children child1 = new Children();
+//		child1.setName("Name1");
+//		child1.setId(5);
+//		child1.setAwatar(DataManager.getImageBytes(bmp));
+//		Children child2 = new Children();
+//		child2.setName("Name2");
+//		child2.setId(10);
+//		child2.setAwatar(DataManager.getImageBytes(bmp1));
+//
+//		Children[] childrens = { child1, child2 };
 		// //////////////////////////////////////////
-		listViewAdapter = new ListViewAdapter(this);
-		DataManager.getChildren().setId(5);
+		listViewAdapter = new ListViewChildrenAdapter(this);
+		//DataManager.getChildren().setId(5);
 
 		int selected = 0;
-		for (int i = 0; i < childrens.length; i++) {
-			listViewAdapter.addItem(childrens[i]);
-			if (childrens[i].getId() == DataManager.getChildren().getId())
+		for (int i = 0; i < childrens.size(); i++) {
+			listViewAdapter.addItem(childrens.get(i));
+			if (childrens.get(i).getId() == DataManager.getChildren().getId())
 				selected = i;
 		}
 		listViewAdapter.setSelectedPosition(selected);
