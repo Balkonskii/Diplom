@@ -1,0 +1,146 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".RegistrationActivity" >
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- </LinearLayout> -->
+
+    <ScrollView
+        android:id="@+id/activity_schildren_profile_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="75dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/LoginFormContainer"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView_Awatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/baby_default" />
+
+                   <ImageButton
+                    android:id="@+id/imageButton_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/options" />
+                
+<!--                 <LinearLayout -->
+<!--                     android:id="@+id/llPhoto" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:orientation="horizontal" > -->
+
+<!--                     <ImageButton -->
+<!--                         android:id="@+id/imgBtn_MakePhoto" -->
+<!--                         android:layout_width="30dp" -->
+<!--                         android:layout_height="30dp" -->
+<!--                         android:padding="5dp" -->
+<!--                         android:src="@drawable/camera" -->
+<!--                         android:layout_marginTop="5dp" /> -->
+
+<!--                     <ImageButton -->
+<!--                         android:id="@+id/imgBtn_PickFromGallery" -->
+<!--                         android:layout_width="30dp" -->
+<!--                         android:layout_height="30dp" -->
+<!--                         android:padding="5dp" -->
+<!--                         android:src="@drawable/gallery" -->
+<!--                         android:layout_marginLeft="5dp" /> -->
+<!--                 </LinearLayout> -->
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edit_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/surname"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edit_middlename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/middlename"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edit_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight"
+                android:imeOptions="actionUnspecified"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edit_growth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/growth"
+                android:imeOptions="actionUnspecified"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <LinearLayout
+                style="@style/LoginFormContainer"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_birthdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birthdate"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <DatePicker
+                    android:id="@+id/datePicker_birthdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Ok" />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

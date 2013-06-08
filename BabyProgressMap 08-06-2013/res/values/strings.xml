@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">BabyProgressMap</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="middlename">Отчество</string>
+    <string name="birthdate">Дата рождения</string>
+    <string name="growth">Рост</string>
+    <string name="weight">Вес</string>
+    <string name="Apply">Применить</string>
+    <string name="Ok">Ок</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="menu_forgot_password">Восстановить пароль</string>
+    <string name="login_progress_signing_in">Signing in…</string>
+    <string name="error_invalid_email">Неверный почтовый адрес</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Обязательное поле</string>
+    <string name="sign_or_register">Войти или зарегистрироваться</string>
+    <string name="login">Имя учетной записи</string>
+    <string name="password">Пароль</string>
+    <string name="show_password">Показать пароль</string>
+    <string name="confirm_password">Подтверждение пароля</string>
+    <string name="choose">Выбрать</string>
+    <string name="edit">Изменить</string>
+    <string name="delete">Удалить</string>
+    <string name="add">Добавить</string>
+    <string name="title">Заголовок</string>
+    <string name="description">Описание</string>
+    <string name="make_photo">Сделать фото</string>
+    <string name="pick_from_gallery">Взять из галереи</string>
+    <string name="without_image">Без изображения</string>
+    <string name="children_profile">Профиль ребенка</string>
+    <string name="change_children_profile">Выбор профиля</string>
+    <string name="exit">Закрыть</string>
+    <string name="logout">Выйти</string>
+    <string name="label_name">Имя:</string>
+    <string name="label_surname">Фамилия:</string>
+    <string name="label_middlename">Отчество:</string>
+    <string name="label_birthdate">Дата рождения:</string>
+    <string name="label_growth">Рост:</string>
+    <string name="label_weight">Вес:</string>
+    <string name="notes">Заметки</string>
+
+</resources>
