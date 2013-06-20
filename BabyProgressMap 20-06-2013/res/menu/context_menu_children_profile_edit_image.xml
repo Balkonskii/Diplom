@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:id="@+id/from_camera" android:title="@string/make_photo" android:icon="@drawable/camera_clipart"></item>
+    <item android:id="@+id/from_gallery" android:title="@string/pick_from_gallery" android:icon="@drawable/gallery_clipart"></item>
+
+</menu>
