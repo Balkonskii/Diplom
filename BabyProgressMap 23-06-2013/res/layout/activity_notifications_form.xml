@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<!--     <RelativeLayout -->
+<!--         android:id="@+id/relativeLayout_header" -->
+<!--         style="@android:style/ButtonBar" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentTop="true" > -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerInParent="true" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView_date" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:text="Large Text" -->
+<!--                 android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/button_chooseDate" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="@string/choose_date" /> -->
+<!--         </LinearLayout> -->
+<!--     </RelativeLayout> -->
+
+    <ListView
+        android:id="@+id/listView_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout_footer"
+        android:layout_below="@+id/relativeLayout_header" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_footer"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/imageButton_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/btn_default_small"
+            android:src="@drawable/add_clipart" />
+    </RelativeLayout>
+
+</RelativeLayout>
